@@ -20,8 +20,7 @@ h1 {
  color:#F3F3f3;
 }
 h2{
-   color:#F3F3f3 
-
+   color:#F3F3f3; 
 }
 h4{
     color: #88f057;
@@ -77,7 +76,7 @@ text-align: center;
 }
 .sidebyside {
     outline: 1px solid red;
-    color:#F3F3f3
+    color:#F3F3f3;
 
 } 
 
@@ -114,15 +113,29 @@ background-repeat: no-repeat;
 }
      
 /* My Work section */
+.myWork {
+display: grid;
+grid-template-columns: 4fr 4fr 4fr;
+
+}
 .workGrid {
+    
+    grid-template-columns: 4fr 4fr 4fr;
     outline: 1px solid red;
-    background: #b29503; 
+   
+
+}
+.wordGrid img {
+    background-color: #b29503 !important;
+    margin: 100px !important;
+    width: 100%;
 
 }
 h3 {
-    color: #88f057
+    color: #88f057;
 }
-    
+ p{color:#F3F3f3;}  
+
 /* Add the base HTML footer element */
 .footer{
     background-color: #373738;}
@@ -135,7 +148,14 @@ h3 {
     footer ul li {
         list-style-type: none;
         padding: 0px 50px;
-        background:#000001
+        background:#000001;
     }
     
-    
+    /* @media only screen and (min-width: 320px) and (max-width:780px) 
+    {} */
+    @media screen and (max-width: 576px) {
+        .mySkills {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
